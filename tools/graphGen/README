@@ -1,0 +1,23 @@
+Graph generator for example graphs of rectangular shapes
+========================================================
+
+- Build with:
+
+    make all
+
+- Execute with:
+
+    ./graphGen.exe
+
+- Options:
+
+    -?, --help: Show Help
+    -v: Vebose output
+    -w [width=5]: Specify graph width (default: 5)
+    -h [height=3]: Specify graph height (default: 3)
+    -p [procs=3]: Specify number of procs (default: 3)
+
+- Generate graph data files:
+
+    #!/bin/bash
+    for i in 2 3 4 5 6 12; do ./graphGen.exe -w 9 -h 7 -p $i > ../../test/res/graphData-$i.cpp; done
